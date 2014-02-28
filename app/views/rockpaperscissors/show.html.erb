@@ -1,0 +1,13 @@
+<h1>Results Page</h1>
+
+<p>Your choice: <%= @choice.name %></p>
+<p>Opponent's choice: <%= @opponents_choice %></p>
+
+<img src="<%=@image%>">
+
+<h2><%= @end_message %> <%= @opponents_choice %></h2>
+
+<br>
+<%= link_to "Play Again", rockpaperscissors_path %>
+
+<%= image_tag("http://www.roflzoo.com/pics/201111/smiling-dog-big.jpg") %>

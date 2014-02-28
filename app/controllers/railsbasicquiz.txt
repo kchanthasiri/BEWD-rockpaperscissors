@@ -1,0 +1,43 @@
+Rails Basics Quiz
+
+Create a new Rails app called puppies
+rails new Puppies
+
+Make a puppy controller
+rails g controller puppies
+
+Add an index method to the puppies controller
+def index
+end
+
+Add an index view
+index.html.erb
+
+What do you add to your routes file to make your homepage route to the index view you just created?
+root 'puppies#index'
+
+Create a model for your puppies controller.
+rails g model puppie
+
+If this is your migration file, how do you add a string column named breed?
+def change
+    create_table :puppies do |t|
+      t.string :breed
+      t.timestamps
+    end
+  end
+
+What terminal command do you need to type in order for your changes to alter the database?
+rake db:migrate
+
+Shoot you messed up! How do you reverse changes to your database?
+rake db:rollback
+
+What is the terminal command to view all your routes?
+rake routes
+
+What does MVC stand for?
+model view controller
+
+What is params? What kind of data structure is it?
+Params is a hash that stores an identifier for the URL

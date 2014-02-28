@@ -1,0 +1,8 @@
+<h1>Welcome to Rock, Paper, Scissors 2.0</h1>
+
+<p>Please pick your weapon of choice</p>
+
+<% @options.each do |option| %>
+	<p><%= option.name %>
+	<%= link_to "Select", rockpaperscissor_path(option.id) %></p>
+<% end %>
